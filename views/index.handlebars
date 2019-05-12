@@ -1,30 +1,52 @@
+<img src="/assets/img/burger.gif" data-still="/assets/img/burger-still.gif" data-animate="/assets/img/burger.gif"
+	data-state="animate" alt="burger gif" width="200px" class="gif">
 <h1>Eat the Burger</h1>
 
-<ul>
-  {{#each burger}}
-    {{#unless devoured}}
-    {{this.id}}. {{this.burger_name}}
-      <button class="devour-me" data-id="{{this.id}}" data-devoured="{{this.devoured}}">Devour me!</button>
-    {{/unless}}
-  {{/each}}
+<div class="burgers">
+	<div class="devour-me-answers">
+		<h3>Up for grabs:</h3>
+		{{#each burger}}
+			{{#unless devoured}}
+				<h4>{{this.id}}. {{this.burger_name}}</h4>
+				<button class="devour-me" data-id="{{this.id}}" data-devoured="{{this.devoured}}">Devour me!</button>
+			{{/unless}}
+		{{/each}}
+	</div>
+	<div class="delete-me-answers">
+		<h3>Finshed Burgers:</h3>
+		{{#each burger}}
+			{{#if devoured}}
+				<h4>{{this.id}}. {{this.burger_name}}</h4>
+				<button class="delete-me" data-id="{{this.id}}" data-devoured="{{this.devoured}}">Delete me!!</button>
+			{{/if}}
+		{{/each}}
+	</div>
+</div>
+{{!-- <ul>
+	{{#each burger}}
+	{{#unless devoured}}
+	{{this.id}}. {{this.burger_name}}
+	<button class="devour-me" data-id="{{this.id}}" data-devoured="{{this.devoured}}">Devour me!</button>
+	{{/unless}}
+	{{/each}}
 </ul>
 
 <ul>
-  {{#each burger}}
-    {{#if devoured}}
-    {{this.id}}. {{this.burger_name}}
-      <button class="delete-me" data-id="{{this.id}}" data-devoured="{{this.devoured}}">Delete me!!</button>
-    {{/if}}
-  {{/each}}
+	{{#each burger}}
+	{{#if devoured}}
+	{{this.id}}. {{this.burger_name}}
+	<button class="delete-me" data-id="{{this.id}}" data-devoured="{{this.devoured}}">Delete me!!</button>
+	{{/if}}
+	{{/each}}
 </ul>
-
-<h2>Add a Burger</h2>
+ --}}
+<h3>Add a Burger</h3>
 <form class="create-form">
 
-  <div class="form-group">
-    <label for="ba">Burger Name:</label>
-    <input type="text" id="ba" name="burger_name">
-  </div>
+	<div class="form-group">
+		<label for="ba">Burger Name:</label>
+		<input type="text" id="ba" name="burger_name">
+	</div>
 
-  <button type="submit" id="submitButton">Add Burger</button>
+	<button type="submit" id="submitButton">Add Burger</button>
 </form>

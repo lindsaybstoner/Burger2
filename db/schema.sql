@@ -8,4 +8,3 @@ CREATE TABLE burgers (
 	PRIMARY KEY (id)
 );
 
-
