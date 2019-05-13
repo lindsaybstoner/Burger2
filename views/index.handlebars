@@ -8,7 +8,7 @@
 		{{#each burger}}
 			{{#unless devoured}}
 				<h4>{{this.id}}. {{this.burger_name}}</h4>
-				<button class="devour-me" data-id="{{this.id}}" data-devoured="{{this.devoured}}">Devour me!</button>
+				<button class="devour-me" data-id="{{this.id}}" data-devoured="{{this.devoured}}">Devour me!!</button>
 			{{/unless}}
 		{{/each}}
 	</div>
@@ -17,7 +17,7 @@
 		{{#each burger}}
 			{{#if devoured}}
 				<h4>{{this.id}}. {{this.burger_name}}</h4>
-				<button class="delete-me" data-id="{{this.id}}" data-devoured="{{this.devoured}}">Delete me!!</button>
+				<button class="delete-me" data-id="{{this.id}}" data-devoured="{{this.devoured}}">Throw out!!</button>
 			{{/if}}
 		{{/each}}
 	</div>
