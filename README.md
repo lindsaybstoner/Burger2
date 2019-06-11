@@ -2,7 +2,6 @@
 Create a burger, eat your burger, throw out your burger. It's that simple. 
 
 ## Getting Started
-
 To use the app go to https://salty-dusk-21677.herokuapp.com/ 
 
 ## Built With
