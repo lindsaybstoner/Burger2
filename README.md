@@ -1,3 +1,20 @@
-# Burger
+# Eat a Burger
+Create a burger, eat your burger, throw out your burger. It's that simple. 
 
-To use the app go to https://salty-dusk-21677.herokuapp.com/ where you will be able to add in a burger you are interested in eating and then click the button associated with it to devour. Once you have clicked devour it, you can click throw out and that will delete the burger from the page and the database. 
+## Getting Started
+
+To use the app go to https://salty-dusk-21677.herokuapp.com/ 
+
+## Built With
+* [Heroku](https://heroku.com) - Hosting and deployment 
+* [MySQL](https://www.mysql.com/) - Database
+* [Node.js](https://nodejs.org/en/) - JavaScript for backend
+* [Express.js](https://expressjs.com/) - standard server framework for Node.js for building web applications and APIs
+* [Handlebars](https://handlebarsjs.com/) - templating engine
+* Homemade ORM
+
+## Authors
+* **Lindsay Stoner** - [lindsaybstoner](https://github.com/lindsaybstoner)
+
+## Acknowledgments
+* Template from Trilogy education services 
