@@ -5,6 +5,7 @@ Create a burger, eat your burger, throw out your burger. It's that simple.
 To use the app go to https://salty-dusk-21677.herokuapp.com/ 
 
 ## Built With
+* [Heroku](https://heroku.com) - Hosting and deployment 
 * [Javascript](https://www.javascript.com/) - front end programming language
 * [jQuery](https://jquery.com/) - JavaScript library
 * [Heroku](https://heroku.com) - Hosting and deployment 
